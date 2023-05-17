@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Game = () => {
+import "./Game.css";
+
+const Game = ({ verifyLetter }) => {
   return (
-    <div>Game</div>
+    <div>
+      <div>Game</div>
+      <button onClick={verifyLetter}>Finalizar jogo</button>
+    </div>
+
   )
 }
 

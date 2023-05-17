@@ -1,11 +1,11 @@
 import React from 'react'
 
-const StartScreen = () => {
+const StartScreen = ({startGame}) => {
   return (
     <div className='start'>
         <h1>Secret Word</h1>
         <p>Clique no botão para começar a jogar!</p>
-        <button>COMEÇAR O JOGO</button>
+        <button onClick={startGame}>COMEÇAR O JOGO</button>
     </div>
   )
 }

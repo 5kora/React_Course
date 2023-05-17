@@ -1,8 +1,14 @@
 import React from 'react'
 
-const GameOver = () => {
+import "./GameOver.css"
+
+const GameOver = ({ retry }) => {
   return (
-    <div>GameOver</div>
+    <div>
+      <div>GameOver</div>
+      <button onClick={retry}>Jogar Novamente</button>
+    </div>
+
   )
 }
 
