@@ -26,8 +26,8 @@ function App() {
   const [pickedCategory, setPickedCategory] = useState("");
   const [letters, setLetters] = useState("");
 
-  const [guessedLetters, setGuessedLetters] = useState('');
-  const [wrongLetters, setWrongLetters] = useState('');
+  const [guessedLetters, setGuessedLetters] = useState([]);
+  const [wrongLetters, setWrongLetters] = useState([]);
   const [guesses, setGuesses] = useState(3);
   const [score, setScore] = useState(0);
 
