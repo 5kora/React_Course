@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 
 //components
-import Navbar from './componentes/Navbar';
+import Navbar from './componentes/navbar';
 
 
 
