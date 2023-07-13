@@ -1,3 +1,4 @@
+// 2 - Links com react router
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
