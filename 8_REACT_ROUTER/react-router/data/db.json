@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "name": "Pão com Ovo",
+      "price": "5.50",
+      "id": 2
+    },
+    {
+      "name": "Teclado",
+      "price": "150",
+      "id": 3
+    }
+  ]
+}
