@@ -3,14 +3,13 @@ import './App.css';
 //1 - Config react router
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+//components
+import Navbar from './componentes/Navbar';
+
 //Pages
 import Home from './pages/Home'
 import About from './pages/About'
-
-//components
-import Navbar from './componentes/navbar';
-
-
+import Product from './pages/Product'
 
 function App() {
   return (
@@ -22,6 +21,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          {/* 4 - Rota dinamica */}
+          <Route path='/products/:id' element={<Product />} />
         </Routes>
       </BrowserRouter>
     </div>
