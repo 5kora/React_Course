@@ -23,7 +23,7 @@ const Product = () => {
                     <h1>{product.name}</h1>
                     <p>R${product.price}</p>
                     {/* 6 - Nested route */}
-                    <Link to={`products/${id}/info`}>Mais informações</Link>
+                    <Link to={`/products/${id}/info`}>Mais informações</Link>
                 </div>
             )}
         </div>
