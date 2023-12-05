@@ -18,13 +18,24 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import { onAuthStateChanged } from "firebase/auth";
 
 function App() {
 
-  const [user, setUder] = useState(undefined);
+  const [user, setUser] = useState(undefined);
   const { auth } = useAuthentication();
 
-  const loadingUser
+  const loadingUser = user === undefined
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+  }, [auth])
+
+  if (loadingUser) {
+    return <p>Carregando...</p>
+  }
 
   return (
     <div className="App">
