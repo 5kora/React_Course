@@ -15,6 +15,8 @@ const CreatePost = () => {
 
   const { insertDocument, response } = useInsertDocument("posts");
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormError("");
@@ -35,16 +37,21 @@ const CreatePost = () => {
     }
     if (formError) return;
 
+    console.log('Estou aqui 1')
+
     insertDocument({
       title,
       image,
       body,
-      tags,
+      tagsArray,
       uid: user.uid,
       createdBy: user.displayName,
     });
 
+    console.log('Estou aqui 2')
+
     //redirect home page
+    navigate("/");
   };
 
   return (
